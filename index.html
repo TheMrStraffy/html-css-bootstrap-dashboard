@@ -15,8 +15,40 @@
 </head>
 <body>
   <header>
-    <nav>
-      
+    <nav class="h-100">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-2">
+            <div class="logo w-100 h-100 text-center">
+              <a href="#">
+                <img class="img-fluid h-100 " src="/img/logo.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-8 d-flex align-items-center">
+            <div class="search-bar w-100">
+              <form class="form-group has-search" role="search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" placeholder="Prova a cercare 'Quanti ragazzi di classe 75 mangiano la pizza?'">
+            </form>
+            </div>
+          </div>
+          <div class="col-2 d-flex justify-content-between align-items-center px-4">
+            <a href="">
+              <i class="fa-solid fa-list-ul text-secondary"></i>
+            </a>
+            <a href="">
+              <i class="fa-solid fa-circle-question text-secondary"></i>
+            </a>
+            <a href="">
+              <i class="fa-solid fa-ellipsis-vertical text-secondary"></i>
+            </a>
+            <a href="">
+              <i class="fa-solid fa-bell text-warning"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
@@ -79,7 +111,7 @@
           <!-- ALUNNI AFFRANTI -->
           <!-- CLASSES, TODO, FAQ & STATS -->
           <div class="row row-cols-1 row-cols-xxl-auto">
-            <!-- Classed and FAQ -->
+            <!-- Classes Table and FAQ -->
             <div class="col-xxl-8">
               <!-- Prossime Classi Card -->
               <div class="card sc-bg-card">
@@ -99,6 +131,40 @@
                       </tr>
                     </thead>
                     <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
                       <tr>
                         <th scope="row">1</th>
                         <td>Mark</td>
@@ -162,7 +228,7 @@
               </div>
               <!-- FAQ -->
             </div>
-            <!-- Classed and FAQ -->
+            <!-- Classed Table and FAQ -->
             <!-- Todo and STATS -->
             <div class="col-xxl-4">
               <!-- TODO -->

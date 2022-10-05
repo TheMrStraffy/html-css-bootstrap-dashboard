@@ -37,6 +37,23 @@ header{
   background-color: #f8f9fa;
   height: 70px;
 }
+/* Search bar */
+.has-search .form-control {
+  padding-left: 2.3rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.3rem;
+  height: 2.3rem;
+  line-height: 2.3rem;
+  text-align: center;
+  pointer-events: none;
+  color: black;
+}
+/* Search bar */
 /* to keep aside and right main fixed on viewport */
 .sc-vh-100{
   height: calc(100vh - 70px);
