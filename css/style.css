@@ -22,6 +22,12 @@ li{
   overflow-y: scroll;
 }
 /* global */
+
+/* background colors */
+.sc-bg-card{
+  background-color: #f7f7f7;
+}
+/* background colors */
 .box{
   height: 50px;
   width: 50px;
