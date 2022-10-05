@@ -18,6 +18,9 @@ a{
 li{
   list-style-type: none;
 }
+.sc-overflow{
+  overflow-y: scroll;
+}
 /* global */
 .box{
   height: 50px;
