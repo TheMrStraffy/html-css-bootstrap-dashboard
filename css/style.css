@@ -1,0 +1,36 @@
+[class^="container"]{
+  background-color: rgba(0, 0, 255, 0.192);
+  border: 1px solid black;
+}
+[class^="row"]{
+  background-color: rgba(0, 255, 85, 0.205);
+  border: 1px solid black;
+}
+[class^="col"]{
+  background-color: rgba(255, 0, 0, 0.185);
+  border: 1px solid black;
+}
+
+/* global */
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+/* global */
+.box{
+  height: 50px;
+  width: 50px;
+  background-color: #f8f9fa;
+}
+header{
+  background-color: #f8f9fa;
+  height: 70px;
+}
+/* to keep aside and right main fixed on viewport */
+.sc-vh-100{
+  height: calc(100vh - 70px);
+}
+/* to keep aside and right main fixed on viewport */
+
