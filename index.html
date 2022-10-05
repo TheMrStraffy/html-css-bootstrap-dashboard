@@ -18,14 +18,14 @@
     <nav class="h-100">
       <div class="container-fluid h-100">
         <div class="row h-100">
-          <div class="col-2">
+          <div class="col-1">
             <div class="logo w-100 h-100 text-center">
               <a href="#">
                 <img class="img-fluid h-100 " src="/img/logo.svg" alt="">
               </a>
             </div>
           </div>
-          <div class="col-8 d-flex align-items-center">
+          <div class="col-10 d-flex align-items-center">
             <div class="search-bar w-100">
               <form class="form-group has-search" role="search">
                 <span class="fa fa-search form-control-feedback"></span>
@@ -33,7 +33,7 @@
             </form>
             </div>
           </div>
-          <div class="col-2 d-flex justify-content-between align-items-center px-4">
+          <div class="col-1 d-flex justify-content-between align-items-center px-4">
             <a href="">
               <i class="fa-solid fa-list-ul text-secondary"></i>
             </a>
@@ -55,7 +55,7 @@
     <div class="container-fluid">
       <div class="row">
         <!-- ASIDE -->
-        <div class="col-1 sc-vh-100 d-flex flex-column p-0">
+        <div id="nav-aside" class="col-1 sc-vh-100 d-flex flex-column p-0">
           <!-- NAV MENU ASIDE TOP-->
             <div class="col-12 h-50">
               <nav>
@@ -88,9 +88,13 @@
             </div>
             <!-- NAV MENU ASIDE TOP-->
             <!-- NAV MENU ASIDE BOTTOM-->
-            <div class="col-12 h-50 d-flex justify-content-center align-items-center pb-4">
-              <div class="box align-self-end">
-
+            <div class="col-12 h-50 d-flex justify-content-center align-items-center pb-4 text-white">
+              <div class="align-self-end">
+                <a href="
+                ">
+                <i class="fa-solid fa-gear"></i>
+                <span>Admin</span>
+              </a>
               </div>
             </div>
             <!-- NAV MENU ASIDE BOTTOM-->
@@ -99,28 +103,29 @@
         <!-- MAIN RIGHT -->
         <div class="col-11 sc-vh-100 sc-overflow">
           <!-- ALUNNI AFFRANTI -->
-          <div class="row row-cols-1 row-cols-xxl-2">
+          <div id="alunni-affranti" class="row row-cols-1 row-cols-xxl-2 text-white">
             <div class="col">
-              <h2>Boolean</h2>
+              <h2 class="py-3">Boolean <span class="sc-btn">Piano Blaze</span></h2>
+              
             </div>
-            <div class="col w-25 offset-xxl-3">
+            <div class="col w-25 offset-xxl-3 py-3">
               <p>Alunni affranti negli ultimi 30 minuti</p>
               <h2>12</h2>
             </div>
           </div>
           <!-- ALUNNI AFFRANTI -->
           <!-- CLASSES, TODO, FAQ & STATS -->
-          <div class="row row-cols-1 row-cols-xxl-auto">
+          <div class="row row-cols-1 row-cols-xxl-auto py-2">
             <!-- Classes Table and FAQ -->
             <div class="col-xxl-8">
               <!-- Prossime Classi Card -->
-              <div class="card sc-bg-card">
+              <div class="card sc-bg-card mb-4">
                 <div class="text-hl d-flex justify-content-between">
                   <h2 class="d-inline align-self-center">Prossime Classi</h2>
                   <i class="bi bi-plus-square align-self-center fs-1 text-primary"></i>
                 </div>
                 <!-- TABLE -->
-                <div class="card">
+                <div class="card py-2 ">
                   <table class="table table-hover">
                     <thead>
                       <tr>
@@ -189,7 +194,7 @@
               </div>
               <!-- Prossime Classi Card -->
               <!-- FAQ -->
-              <div class="card sc-bg-card">
+              <div class="card sc-bg-card py-3">
                 <h2>F.A.Q.</h2>
                 <div class="card">
                   <div class="accordion accordion-flush" id="accordionFlushExample">
@@ -232,7 +237,7 @@
             <!-- Todo and STATS -->
             <div class="col-xxl-4">
               <!-- TODO -->
-              <div class="card">
+              <div class="card p-2">
                 <h2>Todo</h2>
                 <div class="card p-3">
                   <div class="card p-1">
@@ -257,12 +262,11 @@
               </div>
               <!-- TODO -->
               <!-- Stats -->
-              <div class="card p-2">
+              <div class="card p-3">
                 <div class="card">
                   <div class="stat-img text-center">
-                    <img class="img-fluid" src="img/chart.png" alt="">
+                    <img class="img-fluid" src="img/chart.jpg" alt="">
                   </div>
-                  <p class="align-self-end">Statista 2019</p>
                   <h3>Utenti attivi</h3>
                   <p>Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                   <div class="card border-0 border-top rounded-0 justify-content-center p-2">

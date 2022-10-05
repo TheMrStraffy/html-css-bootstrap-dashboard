@@ -1,4 +1,4 @@
-[class^="container"]{
+/* [class^="container"]{
   background-color: rgba(0, 0, 255, 0.192);
   border: 1px solid black;
 }
@@ -9,7 +9,7 @@
 [class^="col"]{
   background-color: rgba(255, 0, 0, 0.185);
   border: 1px solid black;
-}
+} */
 
 /* global */
 a{
@@ -23,11 +23,19 @@ li{
 }
 /* global */
 
-/* background colors */
+/* background */
+#nav-aside{
+  background-image: url("../img/sidebar-bg.png");
+  background-color: #051e34;
+}
+#alunni-affranti{
+  background-color: #1a73e8;
+  
+}
 .sc-bg-card{
   background-color: #f7f7f7;
 }
-/* background colors */
+/* background */
 .box{
   height: 50px;
   width: 50px;
@@ -60,3 +68,8 @@ header{
 }
 /* to keep aside and right main fixed on viewport */
 
+/* aside nav menu */
+#nav-aside a{
+  color: white;
+}
+/* aside nav menu */
