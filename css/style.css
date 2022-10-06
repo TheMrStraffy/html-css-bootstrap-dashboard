@@ -51,7 +51,9 @@ li{
   color:#155cba;
   height: 50px;
 }
-
+.sc-img{
+  width: 55px;
+}
 /* global */
 
 /* background */
@@ -108,3 +110,9 @@ header{
   color: white;
 }
 /* aside nav menu */
+
+@media only screen and (max-width: 1200px) {
+  header {
+    background-color: white;
+  }
+}

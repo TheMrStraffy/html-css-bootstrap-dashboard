@@ -18,11 +18,15 @@
     <nav class="h-100">
       <div class="container-fluid h-100">
         <div class="row h-100">
-          <div class="col-1">
-            <div class="logo w-100 h-100 text-center align-content-center justify-content-center">
+          <div class="col-1 p-0 p-xl-1">
+            <div class="d-none d-xl-flex logo w-100 h-100 text-center align-content-center justify-content-center">
               <a href="#">
-                <img class="img-fluid h-100 d-none d-xl-flex" src="/img/logo.svg" alt="">
-                <img class="img-fluid w-100 h-100 d-flex d-xl-none" src="/img/mobile-logo.png" alt="">
+                <img class="img-fluid h-100 " src="/img/logo.svg" alt="">
+              </a>
+            </div>
+            <div class=" d-flex d-xl-none logo align-content-center justify-content-center h-100 sc-img">
+              <a href="#" class="align-self-center">
+                <img class="img-fluid" src="/img/mobile-logo.png" alt="">
               </a>
             </div>
           </div>
@@ -49,9 +53,18 @@
             </a>
           </div>
           <div class="col-1 d-flex justify-content-start align-items-center px-0 d-flex d-xl-none">
-            <a href="">
-              <i class="fa-solid fa-bell text-warning fs-3"></i>
-            </a>
+            
+            <div class="dropdown">
+              <a class="btn border-0 " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bell text-warning fs-3"></i>
+              </a>
+            
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
