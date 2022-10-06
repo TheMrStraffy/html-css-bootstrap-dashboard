@@ -19,9 +19,10 @@
       <div class="container-fluid h-100">
         <div class="row h-100">
           <div class="col-1">
-            <div class="logo w-100 h-100 text-center">
+            <div class="logo w-100 h-100 text-center align-content-center justify-content-center">
               <a href="#">
-                <img class="img-fluid h-100 " src="/img/logo.svg" alt="">
+                <img class="img-fluid h-100 d-none d-xl-flex" src="/img/logo.svg" alt="">
+                <img class="img-fluid w-100 h-100 d-flex d-xl-none" src="/img/mobile-logo.png" alt="">
               </a>
             </div>
           </div>
@@ -33,7 +34,7 @@
             </form>
             </div>
           </div>
-          <div class="col-1 d-flex justify-content-between align-items-center px-4">
+          <div class="col-1 d-flex justify-content-between align-items-center px-2 d-none d-xl-flex">
             <a href="">
               <i class="fa-solid fa-list-ul text-secondary"></i>
             </a>
@@ -45,6 +46,11 @@
             </a>
             <a href="">
               <i class="fa-solid fa-bell text-warning"></i>
+            </a>
+          </div>
+          <div class="col-1 d-flex justify-content-start align-items-center px-0 d-flex d-xl-none">
+            <a href="">
+              <i class="fa-solid fa-bell text-warning fs-3"></i>
             </a>
           </div>
         </div>
@@ -59,34 +65,43 @@
           <!-- NAV MENU ASIDE TOP-->
             <div class="col-12 h-50">
               <nav>
-                <ul class="d-none d-xxl-block m-auto text-white">
-                  <li class="py-2">
-                    <i class="bi bi-house-door-fill fs-5"></i>
+                <ul class="d-none d-xl-block text-white p-0">
+                  <li class="py-3 px-3 sc-fs">
+                    <i class="bi bi-house-door-fill fs-5 p-xxl-1"></i>
                     <a href="#">Home</a>
                   </li>
-                  <li class="py-2">
-                    <i class="fa-solid fa-chart-simple fs-5"></i>
+                  <li class="py-3 px-3 sc-fs">
+                    <i class="fa-solid fa-chart-simple fs-5 p-xxl-1"></i>
                     <a href="#">Stats</a>
                   </li>
-                  <li class="py-2">
-                    <i class="fa-solid fa-signal fs-5"></i>
+                  <li class="py-3 px-3 sc-fs">
+                    <i class="fa-solid fa-signal fs-5 p-xxl-1"></i>
                     <a href="#">Signals</a>
                   </li>
                 </ul>
-                <ul class="d-block d-xxl-none p-0">
+                <ul class="d-block d-xl-none p-0">
                   <li class="text-center py-2 fs-3 text-white">
-                    <i class="bi bi-house-door-fill"></i>
+                    <a href="#">
+
+                      <i class="bi bi-house-door-fill"></i>
+                    </a>
                   </li>
                   <li class="text-center py-2 fs-3 text-white">
-                    <i class="fa-solid fa-chart-simple"></i>
+                    <a href="#">
+
+                      <i class="fa-solid fa-chart-simple"></i>
+                    </a>
                   </li>
                   <li class="text-center py-2 fs-3 text-white">
-                    <i class="fa-solid fa-signal"></i>
+                    <a href="#">
+
+                      <i class="fa-solid fa-signal"></i>
+                    </a>
                   </li>
                 </ul>
               </nav>
             </div>
-            <!-- NAV MENU ASIDE TOP-->
+            <!-- /NAV MENU ASIDE TOP-->
             <!-- NAV MENU ASIDE BOTTOM-->
             <div class="col-12 h-50 d-flex justify-content-center align-items-center pb-4 text-white">
               <div class="align-self-end">
@@ -97,95 +112,235 @@
               </a>
               </div>
             </div>
-            <!-- NAV MENU ASIDE BOTTOM-->
+            <!-- /NAV MENU ASIDE BOTTOM-->
         </div>
-        <!-- ASIDE -->
+        <!-- /ASIDE -->
         <!-- MAIN RIGHT -->
         <div class="col-11 sc-vh-100 sc-overflow">
           <!-- ALUNNI AFFRANTI -->
-          <div id="alunni-affranti" class="row row-cols-1 row-cols-xxl-2 text-white">
+          <div id="alunni-affranti" class="row row-cols-1 row-cols-xl-2 text-white">
             <div class="col">
               <h2 class="py-3">Boolean <span class="sc-btn">Piano Blaze</span></h2>
-              
+              <div class="apps">
+                <span class="sc-btn">3 app</span>
+                <div class="d-none d-xl-inline">
+                  <span class="sc-btn"> Boolea mobile app</span>
+                  <span class="sc-btn">Boolean web app</span>
+                  <span class="sc-btn">Boolean blog app</span>
+                </div>
+                <div class="d-inline d-xl-none">
+                  <span>>></span>
+                  <span class="sc-btn">+</span>
+                </div>
+              </div>
             </div>
-            <div class="col w-25 offset-xxl-3 py-3">
-              <p>Alunni affranti negli ultimi 30 minuti</p>
+            <div class="col w-25 offset-xl-3 py-3">
+              <p class="affranti">Alunni affranti negli ultimi 30 minuti</p>
               <h2>12</h2>
             </div>
           </div>
-          <!-- ALUNNI AFFRANTI -->
+          <!-- /ALUNNI AFFRANTI -->
           <!-- CLASSES, TODO, FAQ & STATS -->
-          <div class="row row-cols-1 row-cols-xxl-auto py-2">
+          <div class="row row-cols-1 row-cols-xl-auto py-2">
             <!-- Classes Table and FAQ -->
-            <div class="col-xxl-8">
+            <div class="col-xl-8">
               <!-- Prossime Classi Card -->
               <div class="card sc-bg-card mb-4">
                 <div class="text-hl d-flex justify-content-between">
                   <h2 class="d-inline align-self-center">Prossime Classi</h2>
-                  <i class="bi bi-plus-square align-self-center fs-1 text-primary"></i>
+                  <!-- OFF CANVAS -->
+                  <button class="btn sc-btn-off align-items-center d-flex" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                      <h5 id="offcanvasRightLabel">Form</h5>
+                      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-6">
+                            <h6>Email</h6>
+                            <input class="form-control" type="email" placeholder="" aria-label="">
+                          </div>
+                          <div class="col-6">
+                            <h6>Password</h6>
+                            <input class="form-control" type="password" placeholder="" aria-label="">
+                          </div>
+                          <div class="col-12">
+                            <h6>Indirizzo</h6>
+                            <input class="form-control" type="text" placeholder="" aria-label="">
+                          </div>
+                          <div class="col-6">
+                            <h6>Citt&agrave;</h6>
+                              <input class="form-control" type="text" placeholder="" aria-label="">
+                          </div>
+                          <div class="col-4">
+                            <h6>Stato</h6>
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>Scegli</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col-2">
+                            <h6>Cap</h6>
+                            <input class="form-control" type="text" placeholder="" aria-label="">
+                          </div>
+                          <div class="col-12">
+                            
+                            <div class="mb-3">
+                              <label for="formFile" class="form-label"><h6>Foto</h6></label>
+                              <input class="form-control" type="file" id="formFile">
+                            </div>
+                          </div>
+                          <div class="col-12 mb-4">
+                            <input type="checkbox" name="check" id="check">
+                            <label for="check">Seleziona per proseguire</label>
+                          </div>
+                          <div class="col-12">
+                            <div class="btn btn-primary">Salva</div>
+                            <div class="btn btn-warning">Svuota</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- OFF CANVAS -->
                 </div>
                 <!-- TABLE -->
                 <div class="card py-2 ">
                   <table class="table table-hover">
                     <thead>
                       <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-                        <th scope="col">Handle</th>
+                        <th scope="col" class="sc-w-55">Nome</th>
+                        <th scope="col" class="text-center d-none d-md-table-cell">Data Inizio</th>
+                        <th scope="col" class="d-none d-sm-table-cell d-none">ROI</th>
+                        <th scope="col" class="text-center">Stato</th>
+                        <th scope="col" class="text-center">Azioni</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <th scope="row">
+                          <i class="bi bi-code-slash sc-bg-code fs-4 fw-bold text-white"></i>
+                          <span class="px-2">Classe 75</span> 
+                        </th>
+                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="d-none d-sm-table-cell d-none">20%</td>
+                        <td class="text-center">
+                          <span class="bg-success text-white px-2 py-1 rounded-2">Done</span>
+                        </td>
+                        <td class="text-center">
+                            <i class="fa-solid fa-pencil border border-1 p-1 fs-5"></i>
+                            <i class="fa-solid fa-trash border border-1 p-1 fs-5"></i>
+                        </td>
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <th scope="row">
+                          <i class="bi bi-code-slash sc-bg-code fs-4 fw-bold text-white"></i>
+                          <span class="px-2">Classe 75</span> 
+                        </th>
+                        <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                        <td class="d-none d-sm-table-cell d-none">20%</td>
+                        <td class="text-center">
+                          <span class="bg-success text-white px-2 py-1 rounded-2">Done</span>
+                        </td>
+                        <td class="text-center">
+                            <i class="fa-solid fa-pencil border border-1 p-1 fs-5"></i>
+                            <i class="fa-solid fa-trash border border-1 p-1 fs-5"></i>
+                        </td>
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                        <th scope="row">
+                          <i class="bi bi-code-slash sc-bg-code fs-4 fw-bold text-white"></i>
+                          <span class="px-2">Classe 75</span> 
+                        </th>
+                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-sm-table-cell d-none">20%</td>
+                        <td class="text-center">
+                          <span class="bg-warning text-white px-2 py-1 rounded-2">process</span>
+                        </td>
+                        <td class="text-center">
+                            <i class="fa-solid fa-pencil border border-1 p-1 fs-5"></i>
+                            <i class="fa-solid fa-trash border border-1 p-1 fs-5"></i>
+                        </td>
                       </tr>
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <th scope="row">
+                          <i class="bi bi-code-slash sc-bg-code fs-4 fw-bold text-white"></i>
+                          <span class="px-2">Classe 75</span> 
+                        </th>
+                        <td class="d-none d-md-table-cell">18 Feb 2021</td>
+                        <td class="d-none d-sm-table-cell d-none">20%</td>
+                        <td class="text-center">
+                          <span class="bg-success text-white px-2 py-1 rounded-2">Done</span>
+                        </td>
+                        <td class="text-center">
+                            <i class="fa-solid fa-pencil border border-1 p-1 fs-5"></i>
+                            <i class="fa-solid fa-trash border border-1 p-1 fs-5"></i>
+                        </td>
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
+                        <th scope="row">
+                          <i class="bi bi-code-slash sc-bg-code fs-4 fw-bold text-white"></i>
+                          <span class="px-2">Classe 75</span> 
+                        </th>
+                        <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                        <td class="d-none d-sm-table-cell d-none">20%</td>
+                        <td class="text-center">
+                          <span class="bg-danger text-white px-2 py-1 rounded-2">failed</span>
+                        </td>
+                        <td class="text-center">
+                            <i class="fa-solid fa-pencil border border-1 p-1 fs-5"></i>
+                            <i class="fa-solid fa-trash border border-1 p-1 fs-5"></i>
+                        </td>
                       </tr>
                       <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                        <th scope="row">
+                          <i class="bi bi-code-slash sc-bg-code fs-4 fw-bold text-white"></i>
+                          <span class="px-2">Classe 75</span> 
+                        </th>
+                        <td class="d-none d-md-table-cell">20 Feb 2021</td>
+                        <td class="d-none d-sm-table-cell d-none">20%</td>
+                        <td class="text-center">
+                          <span class="bg-success text-white px-2 py-1 rounded-2">Done</span>
+                        </td>
+                        <td class="text-center">
+                            <i class="fa-solid fa-pencil border border-1 p-1 fs-5"></i>
+                            <i class="fa-solid fa-trash border border-1 p-1 fs-5"></i>
+                        </td>
                       </tr>
                       <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
+                        <th scope="row">
+                          <i class="bi bi-code-slash sc-bg-code fs-4 fw-bold text-white"></i>
+                          <span class="px-2">Classe 75</span> 
+                        </th>
+                        <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                        <td class="d-none d-sm-table-cell d-none">20%</td>
+                        <td class="text-center">
+                          <span class="bg-danger text-white px-2 py-1 rounded-2">failed</span>
+                        </td>
+                        <td class="text-center">
+                            <i class="fa-solid fa-pencil border border-1 p-1 fs-5"></i>
+                            <i class="fa-solid fa-trash border border-1 p-1 fs-5"></i>
+                        </td>
                       </tr>
                       <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td colspan="2">Larry the Bird</td>
-                        <td>@twitter</td>
+                        <th scope="row">
+                          <i class="bi bi-code-slash sc-bg-code fs-4 fw-bold text-white"></i>
+                          <span class="px-2">Classe 75</span> 
+                        </th>
+                        <td class="d-none d-md-table-cell">22 Feb 2021</td>
+                        <td class="d-none d-sm-table-cell d-none">20%</td>
+                        <td class="text-center">
+                          <span class="bg-success text-white px-2 py-1 rounded-2">Done</span>
+                        </td>
+                        <td class="text-center">
+                            <i class="fa-solid fa-pencil border border-1 p-1 fs-5"></i>
+                            <i class="fa-solid fa-trash border border-1 p-1 fs-5"></i>
+                        </td>
                       </tr>
                     </tbody>
                   </table>
@@ -235,7 +390,7 @@
             </div>
             <!-- Classed Table and FAQ -->
             <!-- Todo and STATS -->
-            <div class="col-xxl-4">
+            <div class="col-xl-4">
               <!-- TODO -->
               <div class="card p-2">
                 <h2>Todo</h2>
@@ -289,9 +444,9 @@
             </div>
             <!-- Todo and STATS -->
           </div>
-          <!-- CLASSES, TODO, FAQ & STATS -->
+          <!-- /CLASSES, TODO, FAQ & STATS -->
         </div>
-        <!-- MAIN RIGHT -->
+        <!-- /MAIN RIGHT -->
       </div>
     </div>
   </main>

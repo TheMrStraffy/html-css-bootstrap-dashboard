@@ -11,16 +11,47 @@
   border: 1px solid black;
 } */
 
-/* global */
+/* global & utils*/
 a{
   text-decoration: none;
 }
 li{
   list-style-type: none;
 }
+.affranti{
+  font-size: 0.8rem;
+}
 .sc-overflow{
   overflow-y: scroll;
 }
+.sc-w-55{
+  width: 53%;
+}
+
+.sc-bg-code{
+  background-color: #f26551;
+  border-radius: 50%;
+  padding: 1px 4px;
+}
+.sc-btn{
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #155cba;
+  padding: 4px 6px;
+  border-radius: 15px;
+  color: white;
+}
+.sc-btn-off{
+  font-size: 2rem;
+  font-weight: 500;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 15px;
+  border: 1px solid #155cba;
+  color:#155cba;
+  height: 50px;
+}
+
 /* global */
 
 /* background */
@@ -34,6 +65,9 @@ li{
 }
 .sc-bg-card{
   background-color: #f7f7f7;
+}
+.sc-fs{
+  font-size: 0.8rem;
 }
 /* background */
 .box{
@@ -62,6 +96,7 @@ header{
   color: black;
 }
 /* Search bar */
+
 /* to keep aside and right main fixed on viewport */
 .sc-vh-100{
   height: calc(100vh - 70px);
